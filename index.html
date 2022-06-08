@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 4.6--> 
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--Css-->
+    <link rel="stylesheet" href="./files/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Font family-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+    
+
+<!--Header Start-->
+
+    <header class="bg-light p-1">
+    
+      <!-- Parent Of LOGO and SEARCH BAR-->
+      <section class="container  d-flex justify-content-between align-items-center  header-sec">
+        <!--div For logo -->
+        <div class="logo ">
+          <a href="#"><img src="./images/logo_tow-removebg-preview.png" width="90"></a>
+          
+        </div>
+        <!-- Logo div ended -->
+        
+        <!--Div for Search -->
+        <div class="for-search">
+          
+<div class="for-icons  " onclick="toggle()"><i class="fa-solid fa-magnifying-glass"></i></div>
+<div class="input"><input type="text" placeholder="Search Brands Or Products" id="input-search"></div>
+<span class="cut" onclick="Clear()" ><i class="fa fa-times" aria-hidden="true"></i>
+  
+</span>
+</div><!--Search Div Ended-->
+<!-- </div> -->
+
+</section>
+<!-- Parent Of LOGO and SEARCH BAR Ended-->
+</header>
+<!--Header Ended-->
+
+
+
+<section class="container  nav-custom ">
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active mx-auto" onmouseover="imgChange('home')">
+          <a class="nav-link" href="./index.html">Home </a>
+        </li>
+        <li class="nav-item dropdown mx-auto " id="my-drop-down"  onmouseover="imgChange('products')">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item " href="./files/Products/ladiesCollection.html">Ladies Collection</a>
+            <a class="dropdown-item" href="./files/Products/mensCollection.html">Mens Collection</a>
+            <a class="dropdown-item" href="./files/Products/kidsCollection.html">Kids Collection</a>
+          </div>
+        </li>
+        <li class="nav-item mx-auto" onmouseover="imgChange('about')">
+          <a class="nav-link" href="./files/brands.html">Brands</a>
+        </li>
+        <li class="nav-item mx-auto" onmouseover="imgChange('about')">
+          <a class="nav-link" href="./files/about.html">About Us</a>
+        </li>
+        <li class="nav-item mx-auto"  onmouseover="imgChange('contact')" >
+          <a class="nav-link" href="./files/contact.html">Contact Us</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</section>
+<main class="main d-flex justify-content-center bg-danger align-items-center " id="mainBox">
+<div class="text-white">
+            
+
+  <h1 data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">TIME ON WRIST</h1>
+<h1 data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">Watch Experts</h1>
+  </div>
+</main>
+
+
+<section class="container mt-2 ">
+  
+<h1>BRANDS YOU LOVE</h1>
+  <main class="row myCards">
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center " data-aos="fade-right">
+
+      <div class="card my-2   p-2" style="width:18rem">
+
+        <section class="card-body " >
+          <h1 class="my-1">01</h1>
+<h2 class="my-1">ROLEX</h2>
+<p class="my-1">Rolex SA is the leading luxury watch manufacturer in the world producing over 2,000 watches per day that generate sales of over $7 billion dollars each year.
+  
+</p>
+<!-- The Swiss based Company manufactures, services and distributes wristwatches under the Rolex and Tudor brand through authorized dealers -->
+<button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#rolex" class="text-white" target="blank">Learn More</a> <i></i></button>
+
+        </section>
+       
+      </div>
+
+    </section>
+
+
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center"  data-aos="fade-up">
+
+      <div class="card my-2   p-2" style="width:18rem">
+
+        <section class="card-body  ">
+          <h1 class="my-1">02</h1>
+<h2 class="my-1">CASIO</h2>
+<p class="my-1">Casio is the most reliable and trustworthy watch brand with its unparalleled and incomparable reputation.Casio is most known for its G-Shock model. </p>
+<!--which also happens to be one of the most popular and iconic watches in the world. Casio is one of the major watchmakers that serve every watch enthusiast properly -->
+<button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#casio" class="text-white" target="blank">Learn More</a> <i></i></button>
+
+        </section>
+        
+      </div>
+
+    </section>
+
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center"  data-aos="fade-right">
+
+      <div class="card my-2  p-2" style="width:18rem">
+
+        <section class="card-body  ">
+          <h1 class="my-1">03</h1>
+<h2 class="my-1">CITIZEN</h2>
+<p class="my-1">CITIZEN considers luxury not in terms of flashy or expensive decoration, but as elegant, intelligently designed products with a holistic respect for people and the planet. </p>
+<!-- The watches have top-rate quality control, build quality, and use solid materials.Citizen watches offer an excellent balance of value and quality. -->
+
+<button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#citizen" class="text-white" target="blank">Learn More</a> <i></i></button>
+
+        </section>
+       </div>
+
+    </section>
+
+
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center"  data-aos="fade-right">
+
+      <div class="card my-2  p-2" style="width:18rem">
+
+        <section class="card-body  ">
+          <h1 class="my-1">04</h1>
+<h2 class="my-1">RADO</h2>
+<p class="my-1">Rado is a luxury watch brand with many outstanding qualities to offer. They are well known in the watch world for their innovative use of material. </p> 
+<!-- With more than a century's worth of experience and having pioneered the use of ceramics in watchmaking, Rado has earned its spot at the top. --><button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#rado" class="text-white" target="blank">Learn More</a> <i></i></button>
+
+        </section>
+       </div>
+
+    </section>
+
+
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center"  data-aos="fade-up">
+
+      <div class="card my-2   p-2" style="width:18rem">
+
+        <section class="card-body ">
+          <h1 class="my-1">05</h1>
+<h2 class="my-1">SVESTON</h2>
+<p class="my-1">Sveston Is A Luxury Watch Brand with Over 4 Decades of Experience in Watchmaking Industry and A Family Of 10 Million Happy Customers.
+</p> 
+<!-- Our unique designs and matchless watch box make Sveston ideal for gifts. Sveston has built itself upon the idea, “affordable luxury for all. -->
+<button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#sveston" class="text-white" target="blank">Learn More</a> <i></i></button>
+        </section>
+       </div>
+
+    </section>
+    <section class="col-lg-4  col-md-6 col-sm-6 d-flex justify-content-center align-items-center"  data-aos="fade-right">
+
+      <div class="card my-2   p-2" style="width:18rem">
+
+        <section class="card-body  ">
+          <h1 class="my-1">06</h1>
+<h2 class="my-1">OMEGA</h2>
+<p class="my-1"> OMEGA is a watch brand synonymous with excellence, innovation and precision. The company has constantly been defined by its pioneering spirit.</p> 
+<!-- demonstrated by its conquests of the oceans. as well as space. Known for their sporty chronographs, professional dive watches. --><button class="btn  mt-2" style="--clr:gray"><a href="./files/brands.html#omega" class="text-white" target="blank">Learn More</a> <i></i></button>
+
+        </section>
+       </div>
+
+    </section>
+
+
+    
+  </main>
+</section>
+
+
+<section class="container">
+  <h1>Latest</h1>
+  <div class="row">
+  
+    <!--Latest img1-->
+    
+<section class="col-lg-4  my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+<div class="card  card-on-hover" style="width: 18rem; ">
+  <img src="./images/b3.jpg" width="100%" height="100%">
+  <div class="overlay " data-aos="fade-down"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
+    <h5>Omega-watch</h5>
+    <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+
+  </div>
+</div>
+
+</section> 
+
+<!--Latest img 2-->
+
+<section class="col-lg-4 my-2 d-flex  justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/breguet-watch-4-org.jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+<!--Latest img 3-->
+ <section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/Audemars-Pigeut-org.jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+ 
+
+  <!--Latest img 4-->
+<section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/patek_philippe_gents_watches-org.jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+ 
+
+
+<!--Latest img 5-->
+<section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/Omega-watch-org.jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+
+<!--Latest img 6-->
+ <section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/img-card (1).jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+ 
+
+  <!--Latest img 7-->
+ <section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/img-card (2).jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section> 
+  <!--Latest img 8 -->
+ <section class="col-lg-4 my-2 d-flex justify-content-center align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/img-card (3).jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+ 
+  <!--Latest img 9-->
+ <section class="col-lg-4 my-2 d-flex justify-content-center my-3 align-items-center col-md-3 col-sm-6">
+  <div class="card  card-on-hover" style="width: 18rem; ">
+    <img src="./images/img-card (4).jpg" width="100%" height="100%">
+    <div class="overlay " data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <h5>Omega-watch</h5>
+      <button class="btn mt-3" style="--clr:white">Explore  <i></i></button>
+  
+    </div>
+  </div>
+  
+  </section>
+
+</div>
+</section>
+
+
+
+
+
+<!-- <button class="btn my-5" style="--clr:#1e9bff">Click here <i></i></button>
+<button class="btn my-5" style="--clr:gray">Click here <i></i></button> -->
+
+<footer class="bg-light  ">
+
+
+
+  <section class="d-flex justify-content-center align-items-center flex-column p-4 social-icons">
+<h1 class="mb-4">Time On Wrist</h1>
+
+
+<ul class="d-flex bg-light justify-content align-items-center ">
+  <li> <i class="fab fa-twitter"></i></li>
+  <li> <i class="fab fa-facebook"></i></li>
+  <li> <i class="fab fa-instagram"></i></li>
+  <li> <i class="fab fa-linkedin"></i></li>
+  <li> <i class="fab fa-youtube"></i></li>
+
+</div>
+  </section>
+  <section class="bg-dark px-4">
+
+  <section class="container py-5 d-flex justify-content-around align-items-center flex-wrap   footer-sec-two ">
+    
+<div >
+  <p>Categories</p>
+  <ul>
+    <li><a href="javascript:void(0)">Home</a></li>
+    <li><a href="./files/about.html">About</a></li>
+    <li><a href="./files/contact.html">Contact</a></li>
+    <li><a href="./files/feedback.html">Feedback</a></li>
+    <li><a href="./files/Products/mensCollection.html">Products</a></li>
+    <li><a href="javascript:void(0)">Gallery</a></li>
+
+
+  </ul>
+</div>
+<div  >
+  <p >Most Popular Brands</p>
+  <ul>
+    <li><a href="./files/brands.html#rolex">Rolex</a></li>
+    <li><a href="./files/brands.html#rado">Rado</a></li>
+    <li><a href="./files/brands.html#steveson">Steveson</a></li>
+    <li><a href="./files/brands.html#citizen">Citizen</a></li>
+    <li><a href="./files/brands.html#omega">Omega</a></li>
+    <li><a href="./files/brands.html#casio">Casio</a></li>
+
+
+  </ul>
+</div>
+<div class=" last-links-div " >
+  <p>Collection</p>
+  <ul>
+    <li><a href="./files/Products/mensCollection.html">Men's Collection</a></li>
+    <li><a href="./files/Products/./ladiesCollection.html">Ladie's Collection</a></li>
+    <li><a href="./files/Products/kidsCollection.html">Kid's Collection</a></li>
+
+
+  </ul>
+</div>
+</section>
+<div class="footer-bottom-div py-2">
+  <small>
+    &copy;	Copyright 2022
+  </small>
+</div>
+  </section>
+</footer> 
+
+  
+
+</body>
+<script src="./bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/popper.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="./files/app.js"></script>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="container-fluid bg-light">
+        <section class="container d-flex justify-content-between align-items-center ">
+            <div class="logo ">
+                <a href="#"><img src="../../images/logo_tow-removebg-preview.png" width="90"></a>
+                
+              </div>
+
+
+              <div class="for-search">
+              
+                <div class="for-icons  " onclick="toggle()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="input"><input type="text" placeholder="Search Brands Or Products" id="input-search"></div>
+                <span class="cut" onclick="Clear()" ><i class="fa fa-times" aria-hidden="true"></i>
+                  
+                </span>
+                </div>
+        </section>
+    </header>
+
+    <section class="container nav-custom     ">
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto links">
+            <li class="nav-item active mx-auto">
+              <a class="nav-link" href="../../index.html">Home </a>
+            </li>
+            <li class="nav-item dropdown mx-auto" id="my-drop-down">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./ladiesCollection.html">Ladies Collection</a>
+                <a class="dropdown-item" href="./mensCollection.html">Mens Collection</a>
+                <a class="dropdown-item" href="./kidsCollection.html">Kids Collection</a>
+              </div>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="../about.html">Brands</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            <li class="nav-item mx-auto" >
+              <a class="nav-link" href="../contact.html">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </section>
+  
+    <!-- <main  class=" mt-1 d-flex justify-content-center align-items-center"> -->
+      
+          <!-- <div class="text-danger">
+            
+
+            <h1 data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">TIME ON WRIST</h1>
+       <h1 data-aos="fade-down"
+       data-aos-easing="linear"
+       data-aos-duration="1500">Watch Experts</h1>
+            </div> -->
+      <!-- </main> -->
+      
+      
+
+
+      <section class="container my-5" >
+        <h1>LADIES COLLECTION</h1>
+              <div class="row Cards-in-brands">
+        
+        
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc1.webp" class="card-img-top"  width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">ALORA SV-6238 (Father's Day Special Sale)</p>
+              <p class=" "><del class="mr-2">Rs:11,000</del> <ins>Rs:5,499</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal" onclick="Details(this,'../../images/ladiesCollection/lc1.webp')"data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc4.jpg" class="card-img-top"  width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">STEVESON Frost SV-2646</p>
+              <p class=" "><del class="mr-2">Rs:18,999</del> <ins>Rs:15,000</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal"
+              onclick="Details(this,'../../images/ladiesCollection/lc4.jpg')" data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section> 
+        
+        
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc3.jpg" class="card-img-top"  width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">ALORA SV-6238 (Father's Day Special Sale)</p>
+              <p class=" "><del class="mr-2">Rs:11,000</del> <ins>Rs:3,799</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal"
+              onclick="Details(this,'../../images/ladiesCollection/lc3.jpg')" data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        
+        
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc2.webp" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">STEVESON CELINE SV-2690</p>
+              <p class=" "><del class="mr-2">Rs:14,000</del> <ins>Rs:9,000</ins></p>
+              <button class="btn  mt-1 mb-2"data-toggle="modal"
+              onclick="Details(this,'../../images/ladiesCollection/lc2.webp')" data-target="#exampleModal"  style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc5.jpg" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">Most Stylish Watch SV-2490 Black</p>
+              <p class=" "><del class="mr-2">Rs:12,000</del> <ins>Rs:4,549</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal"
+              onclick="Details(this,'../../images/ladiesCollection/lc5.jpg')" data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc9.webp" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">ALORA Silver Blue</p>
+              <p class=" "><del class="mr-2">Rs:11,000</del> <ins>Rs:37,99</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal" 
+              onclick="Details(this,'../../images/ladiesCollection/lc9.webp')"data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc6.jpg" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">STEVESON CELINE SV-2640</p>
+              <p class=" "><del class="mr-2">Rs:11,000</del> <ins>Rs:3,499</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal"
+              onclick="Details(this,'../../images/ladiesCollection/lc6.jpg')" data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+          
+        </section>
+        
+        
+
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc9.jpg" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1"> CELINE SV-2640(Father's day Special</p>
+              <p ><del class="mr-2">Rs:12,000</del> <ins>Rs:3,499</ins></p>
+              <button class="btn  mt-1 mb-2" data-toggle="modal" onclick="Details(this,'../../images/ladiesCollection/lc7.jpg')" data-target="#exampleModal" style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+
+        <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+        
+          <div class="card " style="width: 18rem;">
+            <img src="../../images/ladiesCollection/lc7.jpg" class="card-img-top" width="100%">
+            
+            <div class="card-body p-0 ">
+              <p class="card-text m-0 p-1">Steveson </p>
+              <p class=" "><del class="mr-2">Rs:24,000</del> <ins>Rs:19,000</ins></p>
+              <button class="btn  mt-1 mb-2" onclick="Details(this,'../../images/ladiesCollection/lc7.jpg')" data-toggle="modal" data-target="#exampleModal"  style="--clr:gray">Details <i></i></button>
+        
+            </div>
+          </div>
+        </section>
+        
+        
+
+        </div>
+        
+              
+            </section>
+  
+  
+  
+  
+        
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog myModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"  id="exampleModalLabel" id="productName">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+
+        <section class="row m-0">
+          <div class="col-lg-6 col-md-6 col-sm-6" >
+            <img src="" id="productImg" width="100%" height="100%">
+          </div>
+
+          <div  class="col-lg-6 col-md-6 col-sm-6 bg-light modal-content">
+            <h1 id="productName"></h1>
+            <p id="productDetail"><b></b></p>
+            <ul>
+              <li>Delivery All Over Pakistan</li>
+              <li>Best Product</li>
+              <li>All Are Branded Items</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+
+
+    
+
+
+
+
+      <!--FOOTER START-->
+    <footer class="bg-light ">
+      <!--FOOTER SOCIAL ICONS SECTION-->
+            <section class="d-flex justify-content-center align-items-center flex-column p-4 social-icons">
+          <h1 class="mb-4">Time On Wrist</h1>
+          
+          
+          <ul class="d-flex bg-light justify-content align-items-center ">
+            <li> <i class="fab fa-twitter"></i></li>
+            <li> <i class="fab fa-facebook"></i></li>
+            <li> <i class="fab fa-instagram"></i></li>
+            <li> <i class="fab fa-linkedin"></i></li>
+            <li> <i class="fab fa-youtube"></i></li>
+          
+          </div>
+            </section>
+      <!--FOOTER SOCIAL ICONS SECTION ENDED-->
+      
+      
+        <!--SECTION FOR DARK BG-->
+      <section class="bg-dark px-4">
+        
+        <!--SECTION FOR LINKS-->
+            <section class="container  footer-sec-two py-5 d-flex justify-content-around align-items-center flex-wrap  ">
+              
+          <div >
+            <p>Categories</p>
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../feedback.html">Feedback</a></li>
+              <li><a href="../Products/mensCollection.html">Products</a></li>
+              <li><a href="javascript:void(0)">Gallery</a></li>
+          
+          
+            </ul>
+          </div>
+          <div  >
+            <p >Most Popular Brands</p>
+            <ul>
+              <li><a href="">Rolex</a></li>
+              <li><a href="">Steveson</a></li>
+              <li><a href="">Rado</a></li>
+              <li><a href="">Citizen</a></li>
+              <li><a href="">Omega</a></li>
+              <li><a href="">Casio</a></li>
+          
+          
+            </ul>
+          </div>
+          <div class=" last-links-div " >
+            <p>Collection</p>
+            <ul>
+              <li><a href="./mensCollection.html">Mens Collection</a></li>
+              <li><a href="javascript:void(0)">Ladies Collection</a></li>
+              <li><a href="./kidsCollection.html">Kids Collection</a></li>
+          
+          
+            </ul>
+          </div>
+          </section>
+      <!--SECTION FOR LINKS ENDED-->
+      
+      <!---FOOTER BOTTOM DIV -->
+          <div class="footer-bottom-div py-2">
+            <small>
+              &copy;	Copyright 2022
+            </small>
+          </div>
+      <!---FOOTER BOTTOM DIV  ENDED-->
+      
+            </section>
+        <!--SECTION FOR DARK BG ENDED-->
+      </footer> 
+          
+
+
+</body>
+<script src="../../bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+<script src="../../bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="../../bootstrap-4.6.1-dist/js/popper.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="../app.js"></script>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="container-fluid bg-light">
+        <section class="container d-flex justify-content-between align-items-center ">
+            <div class="logo ">
+                <a href="#"><img src="../../images/logo_tow-removebg-preview.png" width="90"></a>
+                
+              </div>
+
+
+              <div class="for-search">
+              
+                <div class="for-icons  " onclick="toggle()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="input"><input type="text" placeholder="Search Brands Or Products" id="input-search"></div>
+                <span class="cut" onclick="Clear()" ><i class="fa fa-times" aria-hidden="true"></i>
+                  
+                </span>
+                </div>
+        </section>
+    </header>
+
+    <section class="container nav-custom     ">
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto links">
+            <li class="nav-item active mx-auto">
+              <a class="nav-link" href="../../index.html">Home </a>
+            </li>
+            <li class="nav-item dropdown mx-auto" id="my-drop-down">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./ladiesCollection.html">Ladies Collection</a>
+                <a class="dropdown-item" href="./mensCollection.html">Mens Collection</a>
+                <a class="dropdown-item" href="./kidsCollection.html">Kids Collection</a>
+              </div>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="../brands.html">Brands</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            <li class="nav-item mx-auto" >
+              <a class="nav-link" href="../contact.html">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </section>
+  
+   
+
+      
+
+    
+    
+    <section class="container my-5" >
+      <h1>MEN'S COLLECTION</h1>
+            <div class="row Cards-in-brands">
+      
+      
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc2.webp" class="card-img-top"  width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:19,000</del> <ins>Rs:15,499</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc2.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section>
+      
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc3.webp" class="card-img-top"  width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:18,999</del> <ins>Rs:15,000</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc3.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section> 
+      
+      
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc9.webp" class="card-img-top"  width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:24,000</del> <ins>Rs:19,000</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc9.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc4.webp" class="card-img-top" width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:24,000</del> <ins>Rs:19,000</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc4.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section>
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc5.webp" class="card-img-top" width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:21,000</del> <ins>Rs:18,549</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc5.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section>
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mc6.webp" class="card-img-top" width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:22,000</del> <ins>Rs:19,999</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray"  
+            data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mc6.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+      </section>
+      
+      <section class="col-lg-4 col-md-4 col-sm-6 my-2 d-flex justify-content-center">
+      
+        <div class="card " style="width: 18rem;">
+          <img src="../../images/MensCollection/mensCollection1.webp" class="card-img-top" width="100%">
+          
+          <div class="card-body p-0 ">
+            <p class="card-text m-0 p-1">Rolex Milgauss Watch</p>
+            <p class=" "><del class="mr-2">Rs:22,000</del> <ins>Rs:19,999</ins></p>
+            <button class="btn  mt-1 mb-2"  style="--clr:gray" data-toggle="modal" onclick="Details(this,'../../images/MensCollection/mensCollection1.webp')"data-target="#exampleModal" >Details <i></i></button>
+      
+          </div>
+        </div>
+        
+      </section>
+      
+      
+      </div>
+      
+            
+          </section>
+
+
+
+
+      
+
+    <footer class="bg-light mt-5">
+
+
+
+      <section class="d-flex justify-content-center align-items-center flex-column p-4 social-icons">
+    <h1 class="mb-4">Time On Wrist</h1>
+    
+    
+    <ul class="d-flex bg-light justify-content align-items-center ">
+      <li> <i class="fab fa-twitter"></i></li>
+      <li> <i class="fab fa-facebook"></i></li>
+      <li> <i class="fab fa-instagram"></i></li>
+      <li> <i class="fab fa-linkedin"></i></li>
+      <li> <i class="fab fa-youtube"></i></li>
+    
+    </div>
+      </section>
+      <section class="bg-dark px-4">
+    
+      <section class="container  footer-sec-two py-5 d-flex justify-content-around align-items-center flex-wrap  ">
+        
+    <div >
+      <p>Categories</p>
+      <ul>
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="./files/about.html">About</a></li>
+        <li><a href="./files/contact.html">Contact</a></li>
+        <li><a href="./files/feedback.html">Feedback</a></li>
+        <li><a href="./files/Products/mensCollection.html">Products</a></li>
+        <li><a href="javascript:void(0)">Gallery</a></li>
+    
+    
+      </ul>
+    </div>
+    <div  >
+      <p >Most Popular Brands</p>
+      <ul>
+        <li><a href="">Rolex</a></li>
+        <li><a href="">Steveson</a></li>
+        <li><a href="">Rado</a></li>
+        <li><a href="">Citizen</a></li>
+        <li><a href="">Omega</a></li>
+        <li><a href="">Casio</a></li>
+    
+    
+      </ul>
+    </div>
+    <div class=" last-links-div " >
+      <p>Collection</p>
+      <ul>
+        <li><a href="">Mens Collection</a></li>
+        <li><a href="">Ladies Collection</a></li>
+        <li><a href="">Kids Collection</a></li>
+    
+    
+      </ul>
+    </div>
+    </section>
+    <div class="footer-bottom-div py-2">
+      <small>
+        &copy;	Copyright 2022
+      </small>
+    </div>
+      </section>
+    </footer> 
+    
+      
+</body>
+<script src="../../bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+<script src="../../bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="../../bootstrap-4.6.1-dist/js/popper.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="../app.js">
+  
+</script>
+</html>

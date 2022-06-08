@@ -1,0 +1,899 @@
+[debug] [2022-06-07T14:07:53.123Z] ----------------------------------------------------------------------
+[debug] [2022-06-07T14:07:53.126Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Agha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-07T14:07:53.127Z] CLI Version:   11.0.1
+[debug] [2022-06-07T14:07:53.127Z] Platform:      win32
+[debug] [2022-06-07T14:07:53.127Z] Node Version:  v16.14.0
+[debug] [2022-06-07T14:07:53.128Z] Time:          Tue Jun 07 2022 19:07:53 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-06-07T14:07:53.129Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-07T14:07:53.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-07T14:07:53.280Z] > authorizing via signed-in user (aahmadkhan156@gmail.com)
+[debug] [2022-06-07T14:07:53.280Z] [iam] checking project farahnazabduljabbar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-07T14:07:53.283Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/farahnazabduljabbar:testIamPermissions [none]
+[debug] [2022-06-07T14:07:53.283Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/farahnazabduljabbar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-07T14:07:57.651Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/farahnazabduljabbar:testIamPermissions 200
+[debug] [2022-06-07T14:07:57.651Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/farahnazabduljabbar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-07T14:07:57.654Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar [none]
+[debug] [2022-06-07T14:07:58.168Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar 200
+[debug] [2022-06-07T14:07:58.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar {"projectId":"farahnazabduljabbar","projectNumber":"65578024542","displayName":"farahNazAbdulJabbar","name":"projects/farahnazabduljabbar","resources":{"hostingSite":"farahnazabduljabbar"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'farahnazabduljabbar'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-07T14:07:58.181Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar [none]
+[debug] [2022-06-07T14:07:58.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar 200
+[debug] [2022-06-07T14:07:58.887Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/farahnazabduljabbar {"projectId":"farahnazabduljabbar","projectNumber":"65578024542","displayName":"farahNazAbdulJabbar","name":"projects/farahnazabduljabbar","resources":{"hostingSite":"farahnazabduljabbar"},"state":"ACTIVE"}
+[debug] [2022-06-07T14:07:58.895Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions [none]
+[debug] [2022-06-07T14:07:58.895Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-07T14:08:01.180Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions 200
+[debug] [2022-06-07T14:08:01.180Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions {"name":"projects/65578024542/sites/farahnazabduljabbar/versions/2bf157856cb29663","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[farahnazabduljabbar]: beginning deploy... 
+[info] i  hosting[farahnazabduljabbar]: found 70 files in public 
+[debug] [2022-06-07T14:08:01.259Z] [hosting] uploading with 200 concurrency
+[debug] [2022-06-07T14:08:01.308Z] [hosting] hash cache [cHVibGlj] stored for 70 files
+[debug] [2022-06-07T14:08:01.308Z] [hosting][hash queue][FINAL] {"max":29,"min":1,"avg":6.544927191821493,"active":0,"complete":70,"success":70,"errored":0,"retried":0,"total":70,"elapsed":43}
+[debug] [2022-06-07T14:08:01.309Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions/2bf157856cb29663:populateFiles [none]
+[debug] [2022-06-07T14:08:01.309Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions/2bf157856cb29663:populateFiles {"files":{"/download.png":"b30476dd6bf9dfb20d6f6edd66a97a5813e03da47977ec872944e3401be7b8e4","/index.html":"d5e722469f66b1ca05bdfa4ceb36a5b38aa785bc289335a0ae52ec801292fd7a","/bootstrap-4.6.1-dist/css/bootstrap.min.css":"fd9f7566da5b22bf2ca32f9a19c3b88c0a706cc2f8d43795855938d662b7384b","/bootstrap-4.6.1-dist/js/bootstrap.min.js":"af3c08c6ef5148d0170c852f48197f7779e3a98884b1509d4240413cb5c93c6c","/bootstrap-4.6.1-dist/js/jquery.slim.min.js":"dfcabbdbe063504bfed4c9fc9f02274e7544864b2bc5d5309708db21d7bf2c17","/bootstrap-4.6.1-dist/js/popper.min.js":"7eaa490db5e806fbd12846446606aa1547466f8c58702b598d0f089699e10ceb","/files/about.html":"11678623ac69a310e18d2d92e7218514fe878136c8dcc7f621392ba050008661","/files/app.js":"1504b963011c98bbc419778648aa5108312501ffd9841840141d08b494d40532","/files/brands.html":"7d872ac1ae87799d4f240b781206a96b4314539ef2e3729eee255590af5baceb","/files/contact.html":"f7c423db9b1630d66f23fdfbc3224ba484d660b7531f7f2b824953755b60402e","/files/feedback.html":"9afaadd0df51c8679fcda1a99bb41f9d98afed706d5eca398878336bdfbf26a5","/files/style.css":"a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5","/files/Products/ladiesCollection.html":"6d61e22a4673d1bd6e5a3009f16e03b17cd3261d12693a240baebb283516be9a","/files/Products/mensCollection.html":"bc91706c97a28ea45a46127e8aa4a49e28a7e20cc921a40fb02fa0d17622f353","/images/1.jpg":"a0559857048927331d92f047861247d5de9489e753fc45570276f1a129e689d4","/images/Audemars-Pigeut-org.jpg":"3e7a60852ac18c484da4188ec7fbcaa5743f0c4a857583d695ffb05ffaee9151","/images/b1.webp":"e22142682854c8fec0a61596f8f54ea5a023357889dedd5305a45d6964e2cef1","/images/b2.webp":"d7eba7d56a1a431ed869140dfd00ddeab4a0832ea0f4a10b972ddcfe67529e82","/images/b3.jpg":"afb19c1ed284dae3591ca53fe86d118ce1dfe6cacecf6081e7fc7db79b9b58f2","/images/b4.jpg":"6ae263f63ea6836fa69ee085dac1d0634576b176b08bd56882949a6f23d292b6","/images/bg1.jpg":"2b55c58ebd71721dfe4957305a29d42a842f6e184fe1d78eb2618781a5cf57d7","/images/bg2.webp":"54b18bf4a4582fdfcdc66ffa1d4842cd9f3fcb046c8784e1e77ec3aa3bc580b6","/images/bg3.jpg":"885c87a189e6998ae253b49fae93fd9150fd6465075d6399d91bc1680a2815d4","/images/breguet-watch-4-org.jpg":"f1808cb9daa0a0a8e91809577b011785c40e5fc9ef9d760676cfb9412a353c80","/images/Breitling-IWC_opener_LG-org.jpg":"9149d76916a6469ca37e4896cbb8b1d7a9c9cbf3285aee505af522f1c2d3070d","/images/c1.jpeg":"3298b9ddc6ab5d5c14fb8ce301cbdbc7b18dd7f3f25ab57d7e53c65f32f34d3f","/images/c2.jpeg":"22e67918bb9eb26160e0862141cf8ac5bb39c528e96090804ed090c6f88c2bd1","/images/c3.webp":"6f05ca5555a9c0608b6b8113fe7b62d166414234f0c5b6993ba9fe8ce88fd05d","/images/card-img.jpg":"2f9975e8c510f17c1575fc578eacceed9809519330232b462416955e95da4261","/images/cartier-metiers-d-art-rotonde-de-cartier-watch-hpi00689-org.jpg":"2a9208c52e430b7e60ba08b24696733ca6634a5673f3cd9c90fdfb15ac886fb5","/images/img-card (1).jpg":"d55a674db17048bfa78ad02fe2510a6dae1505d40bb032452ac2c0259d3f3163","/images/img-card (2).jpg":"9303392157770aa6fea6fddc6420345f723e394a501e2b3a17774679aa8d3496","/images/img-card (3).jpg":"ec73698aa0880d6b76cacc13edaa26a64347eb9121a717e0d30b9f2d5f1c2702","/images/img-card (4).jpg":"591b393015a1e4212c49ae8dd72c86b4024a17b30e102a1c817fa7b2e7ec3918","/images/logo-tow.png":"e84b0e458df0a7e0875814dfa65a87c2695f81329139eb7c5fa39bb7915f7127","/images/logo_tow-removebg-preview.png":"45d13f9ecc46ab8192bd3e97d885b4986e713a808cc555aba4e4f22f31af1e68","/images/logo_tow.png":"05a14cc0fa7b774b25ca01e668a883592b0e93fbfb3ea03fa0472efe59378d08","/images/Omega-watch-org.jpg":"5af1204e8f7e9e4efa0749dd6b3492fc52dea8f8a98e6f2701a98f848f2169b3","/images/patek_philippe_gents_watches-org.jpg":"92bb3863ac5f3590ad64f9885b47d78d4afbf0383a29c3dbf7c649f536b342cd","/images/watch.jpeg":"5b2847075884791f07b60ddf276fef335b786cd8d6fe8b3b9a3e92e7dd3dd3c6","/images/water-proof.jpg":"80372ab6a253fa536fc01252e52d3c40d33fa5654de61c39363587654b44d311","/images/ladiesCollection/lc1.webp":"bf2a5ef491829be80929c7a90a08ac62fdb3bd11161561945e06e995a9035f25","/images/ladiesCollection/lc2.webp":"2c8088feca96c67602f5448f8eb258383d03308464a8872aa8ac3e4dde843c4f","/images/ladiesCollection/lc3.jpg":"7f474784776eaccc54952ba6092c9464974fd074b21e7bf1c5387ee09dc46f58","/images/ladiesCollection/lc4.jpg":"f5080c3df01037f6900c18fb5a64fcc5b9511c1b2d0fff6b22334866ab47b42e","/images/ladiesCollection/lc5.jpg":"a9728cd79594736e422e758fea8421128e002540c4dbbe4af98c414c9f99f1ea","/images/ladiesCollection/lc6.jpg":"dce1831d01ff1e9dcdd443c2dc939226e3d6d97b28414df0408b3b226aa1b536","/images/ladiesCollection/lc7.jpg":"986ee3f06101181b1dd1d0bc1cf844192a86da8a4c6405e7e724d5faf924e0b6","/images/ladiesCollection/lc9.jpg":"6d3097639c6d0160dc8979f20094de74b2ff6f78a991f705f40d6c767c3e6727","/images/MensCollection/mc2.webp":"edb75eee2cc714ff563ded88565aec806c9fc75e5b1fe8b76395b5af41abc4c3","/images/MensCollection/mc3.webp":"770cb062fe52806e0ac384ba0cee08677a427f81ef72e46f1f657ee1652c481a","/images/MensCollection/mc4.webp":"dc9c8a0ec49e49af61929da2b834e13d4c4bf48a45a4340de3f366e7bc90420b","/images/MensCollection/mc5.webp":"617bf401b2c9b19b039249f5961f935ba4d71f563ccad0999c9d7936ee16a46b","/images/MensCollection/mc6.webp":"eaa467d24ed91c75ab41fc644b45dd06dfa55dac414dec75e6d5f781027a5055","/images/MensCollection/mc7.webp":"770cb062fe52806e0ac384ba0cee08677a427f81ef72e46f1f657ee1652c481a","/images/MensCollection/mc8.webp":"dc9c8a0ec49e49af61929da2b834e13d4c4bf48a45a4340de3f366e7bc90420b","/images/MensCollection/mc9.webp":"33c05fe1be04748c406657524ab78d00dc8260837d5762520c42b7e293601c8a","/images/MensCollection/mensCollection1.webp":"0e403af7f67da1bbbd0e8ee29f71cd8218683e73e38e134ec1bb2cb289dd042f","/images/rolex/rolex-milgauss-watches-pictures-p-os-images-311322-org.jpg":"d7c81e96fa8bbd84231ee8fd6b2f546caaaea4ee5b8ebd278ee0e04abc709952","/videos/3262126440.mp4":"a178e48dc6a34cce6e4681686fa66b2bb305c8efd4c68963823a60631afa3c71","/videos/pexels-maciej-panfazi-6826958.mp4":"e42df0f9e429b03270c67cb8fa763762a2929616daeef8ace63d04bb3ba785d7","/files/Products/kidsCollection.html":"b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39","/images/kidsCollection/kc2.jpg":"b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3","/images/kidsCollection/kc5.jpg":"d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59","/images/kidsCollection/kc4.jpg":"e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b","/images/kidsCollection/kc3.jpg":"18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd","/images/kidsCollection/kc7.jpg":"6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55","/images/kidsCollection/kc8.jpg":"69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732","/images/kidsCollection/kc1.jpg":"b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a","/images/kidsCollection/kc6.jpg":"e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765"}}
+[debug] [2022-06-07T14:08:03.237Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions/2bf157856cb29663:populateFiles 200
+[debug] [2022-06-07T14:08:03.238Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/65578024542/sites/farahnazabduljabbar/versions/2bf157856cb29663:populateFiles {"uploadRequiredHashes":["18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd","a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5","b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3","69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732","d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59","e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765","6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55","e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b","b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39","b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files"}
+[debug] [2022-06-07T14:08:03.247Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:08:03.247Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:08:03.251Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:08:03.252Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:08:03.256Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:08:03.256Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:08:03.259Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:08:03.259Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:08:03.261Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:08:03.262Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:08:03.264Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:08:03.264Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:08:03.266Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:08:03.266Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:08:03.268Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:08:03.268Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:08:03.270Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:08:03.270Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:08:03.271Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:08:03.271Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:08:03.274Z] [hosting][populate queue][FINAL] {"max":1941,"min":1941,"avg":1941,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1969}
+[debug] [2022-06-07T14:08:03.274Z] [hosting] uploads queued: 10
+[debug] [2022-06-07T14:08:23.623Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 502
+[debug] [2022-06-07T14:08:23.624Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:08:23.626Z] [hosting][upload] files/Products/kidsCollection.html (b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.629Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b 502
+[debug] [2022-06-07T14:08:23.629Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:08:23.630Z] [hosting][upload] images/kidsCollection/kc4.jpg (e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.633Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 502
+[debug] [2022-06-07T14:08:23.633Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:08:23.635Z] [hosting][upload] files/style.css (a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.638Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 502
+[debug] [2022-06-07T14:08:23.638Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:08:23.640Z] [hosting][upload] images/kidsCollection/kc2.jpg (b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.653Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd 502
+[debug] [2022-06-07T14:08:23.653Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:08:23.654Z] [hosting][upload] images/kidsCollection/kc3.jpg (18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.657Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a 502
+[debug] [2022-06-07T14:08:23.658Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:08:23.659Z] [hosting][upload] images/kidsCollection/kc1.jpg (b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.661Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 502
+[debug] [2022-06-07T14:08:23.662Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:08:23.664Z] [hosting][upload] images/kidsCollection/kc5.jpg (d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.669Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 502
+[debug] [2022-06-07T14:08:23.669Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:08:23.670Z] [hosting][upload] images/kidsCollection/kc6.jpg (e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.674Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 502
+[debug] [2022-06-07T14:08:23.674Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:08:23.676Z] [hosting][upload] images/kidsCollection/kc7.jpg (6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:23.679Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 502
+[debug] [2022-06-07T14:08:23.680Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:08:23.681Z] [hosting][upload] images/kidsCollection/kc8.jpg (69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:24.031Z] [uploadQueue] Retrying task b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39
+[debug] [2022-06-07T14:08:24.033Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:08:24.033Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:08:24.042Z] [uploadQueue] Retrying task e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b
+[debug] [2022-06-07T14:08:24.043Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:08:24.043Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:08:24.057Z] [uploadQueue] Retrying task a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5
+[debug] [2022-06-07T14:08:24.058Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:08:24.058Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:08:24.065Z] [uploadQueue] Retrying task b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3
+[debug] [2022-06-07T14:08:24.069Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:08:24.070Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:08:24.076Z] [uploadQueue] Retrying task 18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd
+[debug] [2022-06-07T14:08:24.077Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:08:24.078Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:08:24.081Z] [uploadQueue] Retrying task b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a
+[debug] [2022-06-07T14:08:24.081Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:08:24.082Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:08:24.084Z] [uploadQueue] Retrying task d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59
+[debug] [2022-06-07T14:08:24.085Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:08:24.085Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:08:24.090Z] [uploadQueue] Retrying task e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765
+[debug] [2022-06-07T14:08:24.091Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:08:24.091Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:08:24.097Z] [uploadQueue] Retrying task 6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55
+[debug] [2022-06-07T14:08:24.098Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:08:24.098Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:08:24.100Z] [uploadQueue] Retrying task 69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732
+[debug] [2022-06-07T14:08:24.101Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:08:24.101Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:08:44.305Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 502
+[debug] [2022-06-07T14:08:44.306Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:08:44.307Z] [hosting][upload] files/Products/kidsCollection.html (b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.309Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 502
+[debug] [2022-06-07T14:08:44.310Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:08:44.311Z] [hosting][upload] images/kidsCollection/kc2.jpg (b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.313Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 502
+[debug] [2022-06-07T14:08:44.313Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:08:44.317Z] [hosting][upload] files/style.css (a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.320Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd 502
+[debug] [2022-06-07T14:08:44.321Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:08:44.322Z] [hosting][upload] images/kidsCollection/kc3.jpg (18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.325Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 502
+[debug] [2022-06-07T14:08:44.325Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:08:44.328Z] [hosting][upload] images/kidsCollection/kc5.jpg (d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.332Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b 502
+[debug] [2022-06-07T14:08:44.333Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:08:44.334Z] [hosting][upload] images/kidsCollection/kc4.jpg (e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.336Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 502
+[debug] [2022-06-07T14:08:44.337Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:08:44.338Z] [hosting][upload] images/kidsCollection/kc7.jpg (6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.341Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 502
+[debug] [2022-06-07T14:08:44.342Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:08:44.344Z] [hosting][upload] images/kidsCollection/kc8.jpg (69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.348Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a 502
+[debug] [2022-06-07T14:08:44.348Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:08:44.351Z] [hosting][upload] images/kidsCollection/kc1.jpg (b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:44.354Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 502
+[debug] [2022-06-07T14:08:44.356Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:08:44.358Z] [hosting][upload] images/kidsCollection/kc6.jpg (e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:08:45.107Z] [uploadQueue] Retrying task b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39
+[debug] [2022-06-07T14:08:45.109Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:08:45.109Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:08:45.112Z] [uploadQueue] Retrying task b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3
+[debug] [2022-06-07T14:08:45.113Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:08:45.113Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:08:45.122Z] [uploadQueue] Retrying task a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5
+[debug] [2022-06-07T14:08:45.123Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:08:45.124Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:08:45.127Z] [uploadQueue] Retrying task 18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd
+[debug] [2022-06-07T14:08:45.128Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:08:45.128Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:08:45.131Z] [uploadQueue] Retrying task d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59
+[debug] [2022-06-07T14:08:45.132Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:08:45.132Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:08:45.135Z] [uploadQueue] Retrying task e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b
+[debug] [2022-06-07T14:08:45.136Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:08:45.136Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:08:45.149Z] [uploadQueue] Retrying task 6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55
+[debug] [2022-06-07T14:08:45.150Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:08:45.151Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:08:45.156Z] [uploadQueue] Retrying task 69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732
+[debug] [2022-06-07T14:08:45.157Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:08:45.158Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:08:45.166Z] [uploadQueue] Retrying task b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a
+[debug] [2022-06-07T14:08:45.168Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:08:45.168Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:08:45.171Z] [uploadQueue] Retrying task e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765
+[debug] [2022-06-07T14:08:45.172Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:08:45.172Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:05.356Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 502
+[debug] [2022-06-07T14:09:05.357Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:05.358Z] [hosting][upload] images/kidsCollection/kc2.jpg (b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.361Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 502
+[debug] [2022-06-07T14:09:05.361Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:05.362Z] [hosting][upload] files/Products/kidsCollection.html (b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.386Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 502
+[debug] [2022-06-07T14:09:05.386Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:05.387Z] [hosting][upload] images/kidsCollection/kc5.jpg (d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.388Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 502
+[debug] [2022-06-07T14:09:05.389Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:09:05.390Z] [hosting][upload] files/style.css (a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.394Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b 502
+[debug] [2022-06-07T14:09:05.394Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:05.395Z] [hosting][upload] images/kidsCollection/kc4.jpg (e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.403Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd 502
+[debug] [2022-06-07T14:09:05.403Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:05.404Z] [hosting][upload] images/kidsCollection/kc3.jpg (18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.409Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 502
+[debug] [2022-06-07T14:09:05.409Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:05.410Z] [hosting][upload] images/kidsCollection/kc7.jpg (6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.412Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a 502
+[debug] [2022-06-07T14:09:05.413Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:05.414Z] [hosting][upload] images/kidsCollection/kc1.jpg (b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.419Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 502
+[debug] [2022-06-07T14:09:05.419Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:05.420Z] [hosting][upload] images/kidsCollection/kc6.jpg (e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:05.424Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 502
+[debug] [2022-06-07T14:09:05.424Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:09:05.425Z] [hosting][upload] images/kidsCollection/kc8.jpg (69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:06.962Z] [uploadQueue] Retrying task b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3
+[debug] [2022-06-07T14:09:06.965Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:09:06.965Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:06.973Z] [uploadQueue] Retrying task b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39
+[debug] [2022-06-07T14:09:06.974Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:09:06.975Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:06.995Z] [uploadQueue] Retrying task d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59
+[debug] [2022-06-07T14:09:06.996Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:09:06.997Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:07.003Z] [uploadQueue] Retrying task a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5
+[debug] [2022-06-07T14:09:07.004Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:09:07.005Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:09:07.010Z] [uploadQueue] Retrying task e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b
+[debug] [2022-06-07T14:09:07.012Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:09:07.012Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:07.017Z] [uploadQueue] Retrying task 18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd
+[debug] [2022-06-07T14:09:07.018Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:09:07.018Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:07.022Z] [uploadQueue] Retrying task 6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55
+[debug] [2022-06-07T14:09:07.023Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:09:07.023Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:07.027Z] [uploadQueue] Retrying task b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a
+[debug] [2022-06-07T14:09:07.028Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:09:07.028Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:07.036Z] [uploadQueue] Retrying task e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765
+[debug] [2022-06-07T14:09:07.037Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:09:07.037Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:07.039Z] [uploadQueue] Retrying task 69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732
+[debug] [2022-06-07T14:09:07.040Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:09:07.040Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:09:27.208Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 502
+[debug] [2022-06-07T14:09:27.209Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:27.210Z] [hosting][upload] images/kidsCollection/kc2.jpg (b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.218Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 502
+[debug] [2022-06-07T14:09:27.218Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:27.219Z] [hosting][upload] files/Products/kidsCollection.html (b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.235Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 502
+[debug] [2022-06-07T14:09:27.235Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:09:27.236Z] [hosting][upload] files/style.css (a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.257Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 502
+[debug] [2022-06-07T14:09:27.257Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:27.258Z] [hosting][upload] images/kidsCollection/kc5.jpg (d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.272Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 502
+[debug] [2022-06-07T14:09:27.272Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:27.272Z] [hosting][upload] images/kidsCollection/kc7.jpg (6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.277Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd 502
+[debug] [2022-06-07T14:09:27.277Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:27.278Z] [hosting][upload] images/kidsCollection/kc3.jpg (18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.279Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a 502
+[debug] [2022-06-07T14:09:27.280Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:27.280Z] [hosting][upload] images/kidsCollection/kc1.jpg (b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.292Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b 502
+[debug] [2022-06-07T14:09:27.292Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:27.293Z] [hosting][upload] images/kidsCollection/kc4.jpg (e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.297Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 502
+[debug] [2022-06-07T14:09:27.297Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:27.297Z] [hosting][upload] images/kidsCollection/kc6.jpg (e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:27.299Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 502
+[debug] [2022-06-07T14:09:27.299Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:09:27.299Z] [hosting][upload] images/kidsCollection/kc8.jpg (69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:30.425Z] [uploadQueue] Retrying task b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3
+[debug] [2022-06-07T14:09:30.426Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:09:30.426Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:30.430Z] [uploadQueue] Retrying task b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39
+[debug] [2022-06-07T14:09:30.432Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:09:30.432Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:30.437Z] [uploadQueue] Retrying task a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5
+[debug] [2022-06-07T14:09:30.438Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:09:30.438Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:09:30.467Z] [uploadQueue] Retrying task d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59
+[debug] [2022-06-07T14:09:30.469Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:09:30.469Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:30.473Z] [uploadQueue] Retrying task 6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55
+[debug] [2022-06-07T14:09:30.474Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:09:30.474Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:30.479Z] [uploadQueue] Retrying task 18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd
+[debug] [2022-06-07T14:09:30.480Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:09:30.480Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:30.486Z] [uploadQueue] Retrying task b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a
+[debug] [2022-06-07T14:09:30.487Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:09:30.487Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:30.494Z] [uploadQueue] Retrying task e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b
+[debug] [2022-06-07T14:09:30.496Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:09:30.496Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:30.507Z] [uploadQueue] Retrying task e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765
+[debug] [2022-06-07T14:09:30.508Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:09:30.508Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:30.511Z] [uploadQueue] Retrying task 69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732
+[debug] [2022-06-07T14:09:30.512Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:09:30.512Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:09:50.649Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 502
+[debug] [2022-06-07T14:09:50.649Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:50.651Z] [hosting][upload] images/kidsCollection/kc2.jpg (b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.653Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 502
+[debug] [2022-06-07T14:09:50.653Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:50.654Z] [hosting][upload] files/Products/kidsCollection.html (b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.689Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 502
+[debug] [2022-06-07T14:09:50.690Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:50.691Z] [hosting][upload] images/kidsCollection/kc5.jpg (d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.751Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b 502
+[debug] [2022-06-07T14:09:50.751Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:50.753Z] [hosting][upload] images/kidsCollection/kc4.jpg (e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.754Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a 502
+[debug] [2022-06-07T14:09:50.754Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:50.755Z] [hosting][upload] images/kidsCollection/kc1.jpg (b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.756Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd 502
+[debug] [2022-06-07T14:09:50.757Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:50.758Z] [hosting][upload] images/kidsCollection/kc3.jpg (18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.762Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 502
+[debug] [2022-06-07T14:09:50.763Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:50.764Z] [hosting][upload] images/kidsCollection/kc7.jpg (6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.791Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 502
+[debug] [2022-06-07T14:09:50.791Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:50.792Z] [hosting][upload] images/kidsCollection/kc6.jpg (e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:50.794Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 502
+[debug] [2022-06-07T14:09:50.795Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]
+[debug] [2022-06-07T14:09:50.795Z] [hosting][upload] images/kidsCollection/kc8.jpg (69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732) HTTP ERROR 502: headers={} <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[debug] [2022-06-07T14:09:57.051Z] [uploadQueue] Retrying task b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3
+[debug] [2022-06-07T14:09:57.053Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [none]
+[debug] [2022-06-07T14:09:57.053Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b7a6778ad689e86a7ef29a713ef2356c4851541e13e7b02095d23e0ec7988db3 [stream]
+[debug] [2022-06-07T14:09:57.057Z] [uploadQueue] Retrying task b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39
+[debug] [2022-06-07T14:09:57.058Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [none]
+[debug] [2022-06-07T14:09:57.058Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b168c9bc9c422c1b5dc21a3118d50cf1ff34ede72be90d3d9d267f4299ed5e39 [stream]
+[debug] [2022-06-07T14:09:57.083Z] [uploadQueue] Retrying task a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5
+[debug] [2022-06-07T14:09:57.084Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [none]
+[debug] [2022-06-07T14:09:57.085Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/a3acaae9c2eac02fec43e1b96c99f3d58a59cc9c9ccc5d80ed8c4f8839ddb2d5 [stream]
+[debug] [2022-06-07T14:09:57.093Z] [uploadQueue] Retrying task d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59
+[debug] [2022-06-07T14:09:57.094Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [none]
+[debug] [2022-06-07T14:09:57.094Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/d0c71ad285394fe2bf46f93c70fe0cfb6b0303dc5e39a8f41f1a487d97351e59 [stream]
+[debug] [2022-06-07T14:09:57.162Z] [uploadQueue] Retrying task e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b
+[debug] [2022-06-07T14:09:57.163Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [none]
+[debug] [2022-06-07T14:09:57.163Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e118e878943a31fdbb38fa353d67e09e6e21228fcbeee4d2f625e0bf9bd7538b [stream]
+[debug] [2022-06-07T14:09:57.168Z] [uploadQueue] Retrying task b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a
+[debug] [2022-06-07T14:09:57.169Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [none]
+[debug] [2022-06-07T14:09:57.170Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/b6da7279f2b0224ac6ea636acdc1d01a18760e83e0e0607abf50a383c5035c0a [stream]
+[debug] [2022-06-07T14:09:57.177Z] [uploadQueue] Retrying task 18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd
+[debug] [2022-06-07T14:09:57.179Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [none]
+[debug] [2022-06-07T14:09:57.179Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/18f3ba3fe69f5ea2ae3f9e532e1e37dc192b5d8fdf4ac2cebd96a681760da2cd [stream]
+[debug] [2022-06-07T14:09:57.183Z] [uploadQueue] Retrying task 6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55
+[debug] [2022-06-07T14:09:57.184Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [none]
+[debug] [2022-06-07T14:09:57.185Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/6f48103f9b1f00f0a5291ab520e6a4c77296585ef5148fc67320bfafaada5e55 [stream]
+[debug] [2022-06-07T14:09:57.210Z] Error: ENOENT: no such file or directory, open 'D:\Farah\Desktop\Course Module A Assignment\FINAL MODULE PROJECT\public\images\kidsCollection\kc4.jpg'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-06-07T14:09:57.217Z] [uploadQueue] Retrying task e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765
+[debug] [2022-06-07T14:09:57.218Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [none]
+[debug] [2022-06-07T14:09:57.218Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/e61b5e62635318adb22729fa9c24a3c35082c6f300704515efed512de4479765 [stream]
+[debug] [2022-06-07T14:09:57.223Z] [uploadQueue] Retrying task 69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732
+[debug] [2022-06-07T14:09:57.225Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [none]
+[debug] [2022-06-07T14:09:57.226Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/farahnazabduljabbar/versions/2bf157856cb29663/files/69df5579428fcf1ec8d488cdc5b8b8a60f63687d09b26fd2f20291adf6c55732 [stream]

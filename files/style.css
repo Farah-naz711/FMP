@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+
+
+/*Search Bar Styling*/
+.for-search{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    color: black !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.for-icons{
+    position: absolute;
+    top: 0 ;
+    left: 50;
+    width: 50px ;
+    height: 50px;
+    color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+    cursor: pointer;
+    background-color: dimgrey;
+
+}
+
+.for-search .input{
+   
+    width: 300px;
+    position: relative;
+    left: 50px;
+    height: 50px;
+    right: 50px;
+ display: flex;
+ /* background-color: lightgray; */
+    justify-content: center;
+    align-items: center;
+}
+.for-search .input input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+}
+.cut{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    color: grey;
+    /* z-index: -1;     */
+}
+.for-search.active{
+    width: 350px;
+}
+
+/*Search bar ended*/
+
+.main{
+
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/water-proof.jpg);
+    
+    width: 100%;
+    /* background-attachment: fixed; */
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 100%;
+
+}
+
+.nav-custom{
+    position: sticky !important; 
+    top: 0 !important;
+    background-color: white;
+    z-index: 1 !important;
+
+}
+.nav-custom ul 
+{
+
+
+    border-bottom: 2px dashed gray;
+
+
+}
+.nav-custom nav ul li a{
+    font-weight: bold;
+    color: black !important;
+}
+.nav-custom nav ul li {
+    
+    margin: 0 25px !important;
+    transition: 0.5;
+    padding: 2px; border-radius: 8px;
+}
+.nav-custom nav ul li:hover a{
+     border-radius: 8px;
+    color: white !important; 
+
+    
+}
+
+.nav-custom nav ul li:hover {
+    background-color: grey;
+    /* color: white !important;  */
+
+   
+}
+#my-drop-down div a{
+    color: black !important;
+}
+#my-drop-down a:hover{
+    background-color: grey !important; 
+    color: white !important;
+       
+}
+.card section h1{
+
+    font-size: 45px;
+}
+.carousel-custom div{
+    height: 550px;
+}
+.carousel-heading div{
+    position: relative;
+}
+
+.carousel-heading div img{
+    position: absolute;
+    /* height: 100% !important; */
+}
+.carousel-heading div h1  {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    font-size: 55px;
+}
+
+.myCards section div{
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+.myCards .card-body{
+
+    border: 1px solid #27282c;
+}
+.card-on-hover{
+
+    position: relative;
+    height: 220px;
+
+
+}
+.overlay{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    transition: 0.7s ease-in-out;
+    display: none;
+ }
+ .row section {
+     text-align: center;
+ }
+.card-on-hover:hover .overlay{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0,0,0.75);
+   flex-direction: column;
+}
+
+
+/*BUTTON*/
+
+button{
+    border: 1px solid   black !important;
+    outline: none !important;
+transition: 0.5;
+    letter-spacing: 0.1em;
+    position: relative;
+    font-size: 1.5em;
+    color: white !important;
+    /* background-color: #444 !important ; */
+    background-color:  #343a40 !important;
+    
+}
+button:hover{
+
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+button i::before{
+    content: '';
+ position: absolute;
+ width: 10px;
+ height: 5px;
+ background-color: white;
+ border: 2px solid #fff;
+ top: -3.7px;
+ left: 80%;
+ transition: 0.5s;
+ background-color: #27282c;
+    
+}
+button:hover i::before{
+    width: 20px;
+left: 20%;
+}
+button i::after{
+    content: '';
+ position: absolute;
+ width: 10px;
+ height: 5px;
+ background-color: #27282c;
+ border: 2px solid #fff;
+ bottom: -3.7px;
+ left: 20%;
+ transform: translateX(-50%);
+ transition: 0.5s;
+    
+}
+
+button:hover i::after{
+    position: absolute;
+    width: 20px;
+    background-color: #444;
+left: 80%;
+}
+
+main div{
+    text-align: center;
+}
+footer{
+    /* background-color: #27282c; */
+    color: white ;
+    width: 100%;
+    
+}
+.social-icons{
+    text-align: center;
+    color: black;
+}
+.social-icons ul li {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: gray !important;
+
+   font-size: 25px; 
+   border-radius: 50%;
+   line-height: 50px;
+   margin: 0 8px;
+   cursor: pointer;
+   background-color: white;
+   z-index: 1;
+
+}
+
+.social-icons ul li::before{
+    content: '';
+position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s
+}
+.social-icons ul li:hover::before{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #27282c;
+}
+
+footer section ul li {
+    list-style-type: none;
+
+}
+footer p{
+    color: lightgray;
+    font-size: medium !important;
+}
+.last-links-div
+{
+
+    width:160px;
+    height: 200px;
+    transition: 0.5;
+}
+.footer-sec-two{
+    border-bottom: 2px solid gray;
+
+}
+.footer-sec-two div ul li a{
+    color: gray;
+    font-size: small !important;
+    transition: 0.5s;
+
+}
+.footer-sec-two ul li a:hover {
+
+    letter-spacing: 0.25em;
+    color: lightgray;
+}
+
+.footer-bottom-div{
+    color: gray;
+    text-align: center;
+}
+button a:hover{
+    text-decoration: none;
+}
+/*BRANDS STYLING*/
+
+del{
+    text-decoration: line-through red ;
+    color: red;
+}
+
+.Cards-in-brands .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    
+}
+h1{
+    text-align: center;
+    margin: 15px 0;
+}
+/*Contact Page Designing*/
+h1{
+    font-family: 'Tai Heritage Pro', serif;
+
+}
+h2 , h5{
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+.contact-form-parent{
+    width: 50%;
+}
+.contact-form{
+
+    width: 100%;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+}
+.contact-form>div {
+
+    height: 50px;
+    border-bottom: 2px solid gray;
+    padding: 15px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: gray;
+    /* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+}
+.contact-form>div input{
+    
+    border: none;
+    width: 85%;
+    margin-left: 5px;
+color: gray;
+    background-color: transparent;
+    outline: none;  
+}
+.contact-form h1{
+    font-family: 'Tai Heritage Pro', serif;
+    color: black;
+    border-bottom: 2px solid gray;
+}
+.textarea-div{
+
+    border-bottom: none !important;
+    min-height: 65px;
+}
+.textarea-div textarea{
+    width: 100%;
+    min-height: 70px;
+}
+.contact-form button{
+margin: 0 35%;
+
+    }
+
+    /*Modal Styling*/
+.myModal{
+    min-width: 70%;
+}
+.modal-content>ul li{
+    text-align: center;
+}
+@media only screen and (max-width:850px){
+    .header-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:1115px)
+{
+    .main{
+        width: 100%;
+        height: 600px;
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../images/1.jpg);
+        ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover ;
+    }
+    
+}
+
+@media only screen and (max-width:555px){
+
+    .main div h1{
+        font-size: 35px;
+    }
+    
+}
+
+
+/*Carousal Media Query*/
+@media only screen and (max-width:930px)
+{
+
+    .carousel-heading div h1{
+        
+        font-size: 40px;
+    }
+    .carousel-heading div {
+        
+        height: 450px;
+    }
+    .carousel-heading div img{
+
+        height: inherit
+    }
+}
+@media only screen and (max-width:570px)
+{
+
+    .carousel-heading div h1{
+        
+        font-size: 40px;
+        left: 35%;
+    }
+    .carousel-custom div{
+        
+        height: 350px;
+
+    }
+    
+}
+@media only screen and (max-width:450px)
+{
+
+
+    
+    .carousel-custom div{
+        
+        height: 250px;
+
+    }
+    
+    .carousel-heading div h1{
+        
+        font-size: 30px;
+    }
+    .contact-form div{
+        width: 100%;
+        font-size: small;
+    }
+    .contact-form h1{
+        font-size: xx-large;
+    }
+}
+
+/*Search Bar Styling Ended*/
+
+/*Nav Bar Styling Started*/
+
+/*Nav Bar Styling Ended*/
