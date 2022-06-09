@@ -191,7 +191,7 @@ background-size: 100%;
 }
 
 
-/*BUTTON*/
+/*********************************BUTTON STYLING *****************************8*/
 
 button{
     border: 1px solid   black !important;
@@ -253,6 +253,8 @@ left: 80%;
 main div{
     text-align: center;
 }
+
+/***************************  FOOTER STYLING *****************************/
 footer{
     /* background-color: #27282c; */
     color: white ;
@@ -334,13 +336,15 @@ footer p{
 button a:hover{
     text-decoration: none;
 }
-/*BRANDS STYLING*/
+/****************************  BRANDS STYLING ****************************/
 
 del{
     text-decoration: line-through red ;
     color: red;
 }
-
+.Cards-in-brands .card{
+    transition: o.5s;
+}
 .Cards-in-brands .card:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
     
@@ -349,7 +353,7 @@ h1{
     text-align: center;
     margin: 15px 0;
 }
-/*Contact Page Designing*/
+/*********************** Contact Page Designing ************************88*/
 h1{
     font-family: 'Tai Heritage Pro', serif;
 
@@ -357,7 +361,14 @@ h1{
 h2 , h5{
     font-family: 'Poppins', sans-serif;
     
+}
+.contactpgBGimg{
 
+    height: 550px;
+    background-image: url(../images/img-card\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .contact-form-parent{
     width: 50%;
@@ -409,12 +420,27 @@ margin: 0 35%;
 
     }
 
-    /*Modal Styling*/
+    /******************* Modal Styling ***************************/
 .myModal{
     min-width: 70%;
 }
 .modal-content>ul li{
     text-align: center;
+}
+/********************  ABOUT PAGE STYLING **************************/
+.aboutusbgImg{
+    height: 550px;
+    background-image: url(../images/img-card\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.aboutusheading h3{
+
+    border-bottom: 2px solid gray;
+    margin: 15px 0;
+    padding: 10px 0;
+
 }
 @media only screen and (max-width:850px){
     .header-sec{
