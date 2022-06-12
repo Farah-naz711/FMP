@@ -353,7 +353,7 @@ h1{
     text-align: center;
     margin: 15px 0;
 }
-/*********************** Contact Page Designing ************************88*/
+/*********************** Contact Page Designing *************************/
 h1{
     font-family: 'Tai Heritage Pro', serif;
 
@@ -424,8 +424,12 @@ margin: 0 35%;
 .myModal{
     min-width: 70%;
 }
+.modal-content{
+    text-align: center;
+}
 .modal-content>ul li{
     text-align: center;
+    list-style-type: none;
 }
 /********************  ABOUT PAGE STYLING **************************/
 .aboutusbgImg{

@@ -94,30 +94,27 @@
 
 <section class="container d-flex justify-content-center align-items-center flex-wrap-reverse my-5">
 
-  <!-- <div>
-
-  </div> -->
   <div class="contact-form-parent my-5">
     <section class="  contact-form py-3">
       <h1>Contact Us</h1>
       <div>
         <i class="fa fa-user" aria-hidden="true"></i>
-        <input type="text" placeholder="Your Name" >
+        <input type="text" placeholder="Your Name" id="name" >
       </div>
 
       <div>
         <i class="fa fa-envelope" aria-hidden="true"></i>
-        <input type="email" placeholder="Your Email Address">
+        <input type="email" placeholder="Your Email Address" id="email">
       </div>
 
       <div>
         <i class="fa fa-phone" aria-hidden="true"></i>
-        <input type="tel" placeholder="Your Number">
+        <input type="number" placeholder="Your Number" id="phNo">
       </div>
 
       <div>
         <i><i class="fas fa-book"></i></i>
-        <input type="text" placeholder="Subject" >
+        <input type="text" placeholder="Subject" id="subject" >
       </div>
       <div class="textarea-div">
         <textarea name="message" placeholder="Text" id="message" ></textarea>
@@ -125,7 +122,7 @@
       
       <div class="py-2 border-0 mt-4">
 
-        <button class="btn " style="--clr:gray">Submit <i></i></button> 
+        <button class="btn " style="--clr:gray" onclick="CheckInfo()" >Submit <i></i></button> 
       </div>
 
     </section>
